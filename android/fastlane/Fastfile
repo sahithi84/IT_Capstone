@@ -1,0 +1,95 @@
+require 'dotenv'
+Dotenv.load('../../.env')
+firebase_cli_token = ENV['FIREBASE_APP_DISTRIBUTION_TOKEN']
+FIREBASE_APP_DISTRIBUTION_USER_APP_ID = ENV['FIREBASE_APP_DISTRIBUTION_USER_APP_ID']
+sh('echo $firebase_cli_token')
+
+
+
+default_platform(:android)
+
+platform :android do
+  desc "Increment version code"
+  lane :increment_vc do 
+    # Get the current version name and code from the build.gradle file
+    current_version_name = android_get_version_name(gradle_file: "./app/build.gradle")
+    current_version_code = android_get_version_code(gradle_file: "./app/build.gradle")
+
+    # Increment the version code
+    new_version_code = current_version_code.to_i + 1
+
+
+    # Increment the version name
+    version_name_parts = current_version_name.split('.')
+    version_name_parts[-1] = version_name_parts[-1].to_i + 1
+    new_version_name = version_name_parts.join('.')
+
+
+    # Update the build.gradle file with the new version name and code
+    android_set_version_name(version_name: new_version_name, gradle_file: "./app/build.gradle")
+    android_set_version_code(version_code: new_version_code, gradle_file: "./app/build.gradle")
+
+
+    # Remove the old content of the release.txt file
+    sh('echo \'\' > release_notes.txt')
+
+    # Write release message to file
+    release_message = "Release #{new_version_name} (#{new_version_code}) using Fastlane\n"
+    sh("echo '#{release_message}' >> release_notes.txt")
+  end
+
+
+
+  desc "Build the AAB and APK for Android staging build release"
+  lane :build_app_release do
+    gradle(task: "assemble", build_type: "Release")
+  end
+
+
+  desc "Upload Android Staging Build to Firebase app distribution"
+  lane :staging_android_firebase_build do
+    increment_vc
+    build_app_release
+    firebase_app_distribution(
+      app: FIREBASE_APP_DISTRIBUTION_USER_APP_ID,
+      release_notes: File.read("./release_notes.txt"),
+      groups: "fesaw-devs",
+      firebase_cli_token: firebase_cli_token
+    )
+  end
+
+
+  desc "Upload Android Staging Build to Firebase app distribution without incrementing version"
+  lane :staging_android_firebase_build_without_patch_versioning do
+    build_app_release
+    firebase_app_distribution(
+      app: FIREBASE_APP_DISTRIBUTION_USER_APP_ID,
+      release_notes: File.read("./release_notes.txt"),
+      groups: "testers",
+      firebase_cli_token: firebase_cli_token
+    )
+  end
+
+
+  desc "Build the AAB for Android production build release"
+  lane :build_prod_app_release do
+    gradle(task: "bundle", build_type: "Release")
+  end
+
+
+  desc "Upload Android Staging Build to Firebase app distribution"
+  lane :production_android_playstore_build do
+    increment_vc
+    sh('rm -rf ../app/build')
+    build_prod_app_release
+    upload_to_play_store
+  end
+
+  desc "Upload Android Staging Build to Firebase app distribution without incrementing version"
+  lane :production_android_playstore_build_without_patch_versioning do
+    sh('rm -rf ../app/build')
+    build_prod_app_release
+    upload_to_play_store
+  end
+
+end

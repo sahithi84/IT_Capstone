@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "792237323954",
+    "project_id": "ohm-electric-cabs-user",
+    "storage_bucket": "ohm-electric-cabs-user.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792237323954:android:af1879b7633681ddf13bab",
+        "android_client_info": {
+          "package_name": "com.ohm.user"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3j9_bOKdG9119-OLA7baA14korZ34EvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

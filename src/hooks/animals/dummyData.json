@@ -1,0 +1,189 @@
+[
+  {
+    "name": "United Kingdom",
+    "latitude": 54,
+    "longitude": -2,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Tree_of_Life%2C_Disney%27s_Animal_Kingdom.jpg/300px-Tree_of_Life%2C_Disney%27s_Animal_Kingdom.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Australia",
+    "latitude": -27,
+    "longitude": 133,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Macropus_rufogriseus_rufogriseus_Juvenile_2.jpg/300px-Macropus_rufogriseus_rufogriseus_Juvenile_2.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Cuba",
+    "latitude": 21.5,
+    "longitude": -80,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Cuba.svg/300px-Flag_of_Cuba.svg.png"
+      }
+    ]
+  },
+  {
+    "name": "Eritrea",
+    "latitude": 15,
+    "longitude": 39,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Flag_of_Eritrea.svg/300px-Flag_of_Eritrea.svg.png"
+      }
+    ]
+  },
+  {
+    "name": "Bulgaria",
+    "latitude": 43,
+    "longitude": 25,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/300px-Flag_of_Bulgaria.svg.png"
+      }
+    ]
+  },
+  {
+    "name": "Romania",
+    "latitude": 46,
+    "longitude": 25,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Europe_orthographic_Caucasus_Urals_boundary.svg/300px-Europe_orthographic_Caucasus_Urals_boundary.svg.png"
+      }
+    ]
+  },
+  {
+    "name": "Vanuatu",
+    "latitude": -16,
+    "longitude": 167,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Vanuatu.svg/300px-Flag_of_Vanuatu.svg.png"
+      }
+    ]
+  },
+  {
+    "name": "Syria",
+    "latitude": 35,
+    "longitude": 38,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Flag_of_Syria.svg/300px-Flag_of_Syria.svg.png"
+      }
+    ]
+  },
+  {
+    "name": "São Tomé and Príncipe",
+    "latitude": 1,
+    "longitude": 7,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe.svg/300px-Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe.svg.png"
+      }
+    ]
+  },
+  {
+    "name": "New Zealand",
+    "latitude": -41,
+    "longitude": 174,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Karuwai_at_August_2005_Health_Check.JPG/300px-Karuwai_at_August_2005_Health_Check.JPG"
+      }
+    ]
+  },
+  {
+    "name": "Angola",
+    "latitude": -12.5,
+    "longitude": 18.5,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Angola.svg/300px-Flag_of_Angola.svg.png"
+      }
+    ]
+  },
+  {
+    "name": "Christmas Island",
+    "latitude": -10.5,
+    "longitude": 105.66666666,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Christmas_Island_%285774532171%29.jpg/300px-Christmas_Island_%285774532171%29.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Aruba",
+    "latitude": 12.5,
+    "longitude": -69.96666666,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aruba_World_Wind.jpg/300px-Aruba_World_Wind.jpg"
+      }
+    ]
+  },
+  {
+    "name": "India 1",
+    "latitude": 22,
+    "longitude": 75,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://img.freepik.com/free-photo/cute-ceylon-elephant-walking-grass-searching-food_181624-52774.jpg"
+      }
+    ]
+  },
+  {
+    "name": "India 2",
+    "latitude": 23,
+    "longitude": 80,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Great-Indian-one-horned-rhinoceros-at-Kaziranga-national-park-in-Assam-India.jpg/640px-Great-Indian-one-horned-rhinoceros-at-Kaziranga-national-park-in-Assam-India.jpg"
+      }
+    ]
+  },
+  {
+    "name": "India 4",
+    "latitude": 29,
+    "longitude": 75,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1d/1f/10/54/asiatic-lion-at-gir-national.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Georgia",
+    "latitude": 42,
+    "longitude": 43.5,
+    "species": [
+      {
+        "name": "Animal",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Georgia.svg/300px-Flag_of_Georgia.svg.png"
+      }
+    ]
+  }
+]
